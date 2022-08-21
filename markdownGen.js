@@ -24,6 +24,14 @@ function markdownGen(answers) {
     }
   }
 
+  function renderLicenseSection(license) {
+    if (!license === "Unlicensed") {
+      return `Licensed under the ${answers.licensing} license`;
+    } else {
+      return "This project is not licensed.";
+    }
+  }
+
   return `# ${answers.project_title}  ${renderBadge(answers.licensing)}
 
 ## 📙 Table of Contents
@@ -63,8 +71,7 @@ ${answers.test_instructions}
 
 
 ## 📃 License
-${answers.licensing}
-
+${renderLicenseSection(answers.licensing)}
 
 ## 🤔 Questions
 - [Visit my GitHub](https://github.com/${answers.github})
