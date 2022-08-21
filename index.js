@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 const fs = require("fs");
-
+// var ui = new inquirer.ui.BottomBar();
+// ui.log.write("Press ctrl + D to cancel out.");
 const questions = [
   {
     type: "input",
@@ -14,7 +15,7 @@ const questions = [
     },
   },
   {
-    type: "editor",
+    type: "input",
     name: "description",
     message: "Describe your project",
     validate: (answer) => {
@@ -26,17 +27,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "table-of-contents",
-    message: "Which items would you like to be in the Table of Contents?",
-    validate: (answer) => {
-      if (answer === "") {
-        return "Please enter something";
-      }
-      return true;
-    },
-  },
-  {
-    type: "editor",
     name: "installation",
     message: "What are the installation instructions?",
     validate: (answer) => {
@@ -47,7 +37,7 @@ const questions = [
     },
   },
   {
-    type: "editor",
+    type: "input",
     name: "usage",
     message: "How do you use this application?",
     validate: (answer) => {
@@ -58,7 +48,7 @@ const questions = [
     },
   },
   {
-    type: "editor",
+    type: "input",
     name: "contributions",
     message: "What are the contribution guidelines?",
     validate: (answer) => {
@@ -69,7 +59,7 @@ const questions = [
     },
   },
   {
-    type: "editor",
+    type: "input",
     name: "test-instructions",
     message: "What are the test instructions?",
     validate: (answer) => {
@@ -90,7 +80,15 @@ const questions = [
       }
       return true;
     },
-    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    choices: [
+      "Apache",
+      "Boost",
+      "Eclipse",
+      "MIT",
+      "Mozilla",
+      "Perl",
+      "Unlicense",
+    ],
   },
   {
     type: "input",
