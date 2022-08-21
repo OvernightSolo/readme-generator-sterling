@@ -42,7 +42,7 @@ ${answers.licensing}
 
 
 ## Questions
-- [Visit my GitHub](github.com/${answers.github})
+- [Visit my GitHub](https://github.com/${answers.github})
 - Drop me a line at ${answers.email} with your questions.
   `;
 }
