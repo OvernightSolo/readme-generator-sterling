@@ -37,45 +37,47 @@ function markdownGen(answers) {
 ## 📙 Table of Contents
 
 
-- [Project Description](#project-description)
+- [Project Description](#project-description) 💻 
 
-- [Usage](#usage)
+- [Installation](#installation) 🪛
 
-- [Contributing](#contributing)
+- [Usage](#usage) 🔑 
 
-- [Installation](#installation)
+- [Contributing](#contributing) 🤝🏽
 
-- [Questions](#questions)
+- [Tests](#tests) 🧪
 
-- [License](#license)
+- [License](#license) 📃
+
+- [Questions](#questions) 🤔
 
 
 
-
-## 💻 Project Description
+## Project Description
 ${answers.project_title}
 
 
-## 🪛 Installation
+## Installation
 ${answers.installation}
 
 
-## 🔑 Usage
+## Usage
 ${answers.usage}
 
 
-## 🤝🏽 Contributing
+## Contributing
 ${answers.contributions}
 
 
-## 🧪 Tests
+## Tests
 ${answers.test_instructions}
 
 
-## 📃 License
+## License
 ${renderLicenseSection(answers.licensing)}
 
-## 🤔 Questions
+
+## Questions
 - [Visit my GitHub](https://github.com/${answers.github})
 - Drop me a line at ${answers.email} with your questions.
   `;
