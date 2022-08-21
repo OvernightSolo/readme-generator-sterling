@@ -1,7 +1,7 @@
 function markdownGen(answers) {
   return `# ${answers.project_title}
 
-## Table of Contents
+## 📙 Table of Contents
 
 
 - [Project Description](#project-description)
@@ -17,31 +17,31 @@ function markdownGen(answers) {
 - [License](#license)
 
 
-## Project Description
+## 💻 Project Description
 ${answers.description}
 
 
-## Installation
+## 🪛 Installation
 ${answers.installation}
 
 
-## Usage
+## 🔑 Usage
 ${answers.usage}
 
 
-## Contributing
+## 🤝🏽 Contributing
 ${answers.contributions}
 
 
-## Tests
+## 🧪 Tests
 ${answers.test_instructions}
 
 
-## License
+## 📃 License
 ${answers.licensing}
 
 
-## Questions
+## 🤔 Questions
 - [Visit my GitHub](https://github.com/${answers.github})
 - Drop me a line at ${answers.email} with your questions.
   `;
