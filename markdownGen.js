@@ -25,7 +25,7 @@ function markdownGen(answers) {
   }
 
   function renderLicenseSection(license) {
-    if (!license === "Unlicensed") {
+    if (license !== "Unlicensed") {
       return `Licensed under the ${answers.licensing} license`;
     } else {
       return "This project is not licensed.";
@@ -48,6 +48,8 @@ function markdownGen(answers) {
 - [Questions](#questions)
 
 - [License](#license)
+
+
 
 
 ## 💻 Project Description
