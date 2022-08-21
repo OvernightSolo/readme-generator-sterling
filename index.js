@@ -1,6 +1,6 @@
 var inquirer = require("inquirer");
 const fs = require("fs");
-const generate = require(markdownGen);
+const markdownGen = require("./markdownGen");
 
 const questions = [
   {
@@ -116,6 +116,7 @@ const questions = [
 
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, "  "));
+
   fs.writeFile("README.md", markdownGen(answers), (err) =>
     err ? console.error(err) : console.log("Success!")
   );

@@ -1,28 +1,36 @@
 function markdownGen(answers) {
   return `
-  # ${answers.title}
+# ${answers.project_title}
 
-  ## Description
-  ${answers.description}
+## Table of Contents
+[Project Description](#Description)
+[Usage](#Usage)
+[Contributing](#Contributing)
+[Installation](#Installation)
+[Questions](#Questions)
+[License](#License)
 
-  ## Installation
-  ${answers.installation}
+## Description
+${answers.description}
 
-  ## Usage
-  ${answers.usage}
+## Installation
+${answers.installation}
 
-  ## Contributions
-  ${answers.contributions}
+## Usage
+${answers.usage}
 
-  ## Tests
-  ${answers.test_instructions}
+## Contributions
+${answers.contributions}
 
-  ## License
-  ${answers.licensing}
+## Tests
+${answers.test_instructions}
 
-  ## Contact Information
-  github.com/${github}
-  ${email}
+## License
+${answers.licensing}
+
+## Contact Information
+github.com/${answers.github}
+${answers.email}
   `;
 }
 module.exports = markdownGen;
