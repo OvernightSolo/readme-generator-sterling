@@ -1,7 +1,9 @@
+//Import Inquirer npm, FS library, and the render file
 var inquirer = require("inquirer");
 const fs = require("fs");
 const markdownGen = require("./markdownGen");
 
+//Set up question array for prompts
 const questions = [
   {
     type: "input",
@@ -114,10 +116,12 @@ const questions = [
   },
 ];
 
+//Get and log answer data with promise
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, "  "));
 
-  fs.writeFile("README.md", markdownGen(answers), (err) =>
+  //Write answer data to the generated README file
+  fs.writeFile("gen-README.md", markdownGen(answers), (err) =>
     err ? console.error(err) : console.log("Success!")
   );
 });

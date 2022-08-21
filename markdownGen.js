@@ -1,4 +1,5 @@
 function markdownGen(answers) {
+  // Render selected license badge to page next to title
   function renderBadge(licensing) {
     switch (licensing) {
       case "Apache":
@@ -23,7 +24,7 @@ function markdownGen(answers) {
         return "[![License: unlicensed](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)";
     }
   }
-
+  // If there is no license, return a string that says so.
   function renderLicenseSection(license) {
     if (license !== "Unlicensed") {
       return `Licensed under the ${answers.licensing} license`;
@@ -32,6 +33,7 @@ function markdownGen(answers) {
     }
   }
 
+  // Render the README file and link table of contents to the corresponding section
   return `# ${answers.project_title}  ${renderBadge(answers.licensing)}
 
 ## 📙 Table of Contents
