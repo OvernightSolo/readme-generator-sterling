@@ -1,7 +1,7 @@
 var inquirer = require("inquirer");
 const fs = require("fs");
-// var ui = new inquirer.ui.BottomBar();
-// ui.log.write("Press ctrl + D to cancel out.");
+const generate = require(markdownGen);
+
 const questions = [
   {
     type: "input",
@@ -60,7 +60,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "test-instructions",
+    name: "test_instructions",
     message: "What are the test instructions?",
     validate: (answer) => {
       if (answer === "") {
@@ -92,8 +92,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "github-name",
-    message: "What is your GitHub username?",
+    name: "github",
+    message: "For questions, what is your GitHub username?",
     validate: (answer) => {
       if (answer === "") {
         return "Please enter a username";
@@ -104,7 +104,7 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "What is your email address?",
+    message: "For questions, what is your email address?",
     validate: (answer) => {
       if (answer === "") {
         return "Please enter an email address";
@@ -116,4 +116,7 @@ const questions = [
 
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, "  "));
+  fs.writeFile("README.md", markdownGen(answers), (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
 });
