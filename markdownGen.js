@@ -8,7 +8,7 @@ function markdownGen(answers) {
 
 - [Usage](#usage)
 
-- [Contributing](#contributions)
+- [Contributing](#contributing)
 
 - [Installation](#installation)
 
@@ -29,7 +29,7 @@ ${answers.installation}
 ${answers.usage}
 
 
-## Contributions
+## Contributing
 ${answers.contributions}
 
 
@@ -42,8 +42,8 @@ ${answers.licensing}
 
 
 ## Questions
-- github.com/${answers.github}
-- ${answers.email}
+- [Visit my GitHub](github.com/${answers.github})
+- Drop me a line at ${answers.email} with your questions.
   `;
 }
 module.exports = markdownGen;
