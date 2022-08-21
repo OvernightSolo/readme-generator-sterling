@@ -20,9 +20,11 @@
 
 A node.js-generated application that takes user input and populates a README file, using the Inquirer npm for the purposes of a developer repo.
 
-## Watch a demo!
+## Watch a demo on YouTube!
 
-![Includes one take with a license, and one without.](./readme-gen-take4.webm)
+Includes one take with a license, and one without. https://youtu.be/lYVApe-J7Ek
+
+<iframe src="https://drive.google.com/file/d/1TxMaX4ZauZ_wAONmih6eZjIOFhAYHIx2/preview" width="640" height="480"></iframe>
 
 ## Installation
 
