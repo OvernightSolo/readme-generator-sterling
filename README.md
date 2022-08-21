@@ -24,8 +24,6 @@ A node.js-generated application that takes user input and populates a README fil
 
 Includes one take with a license, and one without. https://youtu.be/lYVApe-J7Ek
 
-<iframe src="https://drive.google.com/file/d/1TxMaX4ZauZ_wAONmih6eZjIOFhAYHIx2/preview" width="640" height="480"></iframe>
-
 ## Installation
 
 Run `npm init` and `npm i inquirer` in an integrated terminal.
