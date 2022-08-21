@@ -87,7 +87,7 @@ const questions = [
       "MIT",
       "Mozilla",
       "Perl",
-      "Unlicense",
+      "Unlicensed",
     ],
   },
   {
