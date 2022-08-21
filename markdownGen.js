@@ -56,7 +56,7 @@ function markdownGen(answers) {
 
 
 ## Project Description
-${answers.project_title}
+${answers.description}
 
 
 ## Installation

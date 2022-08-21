@@ -1,4 +1,4 @@
-# README Generator  [![License: unlicensed](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)
+# README Generator (unlicensed)  [![License: unlicensed](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)](https://img.shields.io/badge/license-This%20project%20is%20not%20licensed-red.svg)
 
 ## 📙 Table of Contents
 
@@ -20,7 +20,7 @@
 
 
 ## Project Description
-README Generator
+A node.js-generated application that uses user input from the Inquirer npm to populate a README.md file for a user's repo.
 
 
 ## Installation
